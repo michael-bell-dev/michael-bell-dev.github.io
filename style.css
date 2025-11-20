@@ -48,6 +48,7 @@ h1, h2, p, a {
   height: 100%;
   pointer-events: none;
   z-index: 0;
+  overflow: hidden;
 }
 
 .star {
@@ -61,5 +62,5 @@ h1, h2, p, a {
 
 @keyframes twinkle {
   10%, 90% { opacity: 0; }
-  45%, 55% { opacity: 1; }
+  45%, 55% { opacity: var(--max-opacity); }
 }
