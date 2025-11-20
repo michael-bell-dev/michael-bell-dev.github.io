@@ -1,15 +1,27 @@
 [
     {
         "name": "ScrapRush",
-        "thumbnail": "",
+        "thumbnail": "images/ScrapRushIcon.png",
         "description": "A roguelike first person shooter with unlimited weapon customization.",
         "text": "",
         "images": [],
-        "tags": ["WIP", "Unreal Engine", "Game", "Procedural Generation", "Data Structures", "OOP", "Algorithms"],
+        "tags": ["Unreal Engine", "Game", "Procedural Generation", "Data Structures", "OOP", "Algorithms"],
         "date": "Aug 2024 - Present",
         "links": {
             "GitHub": "",
             "Demo": ""
+        }
+    },
+    {
+        "name": "Automated Music Transcription",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["Python", "Music21", "Research", "Algorithms", "OOP"],
+        "date": "May 2025 - Present",
+        "links": {
+            "GitHub": ""
         }
     },
     {
@@ -18,7 +30,7 @@
         "description": "Migrating an existing website from NationBuilder to Wix.",
         "text": "",
         "images": [],
-        "tags": ["WIP", "JavaScript", "Web Development", "CSV", "Wix"],
+        "tags": ["JavaScript", "Web Development", "CSV", "Wix"],
         "date": "Sep 2025 - Present",
         "links": {
             "GitHub": ""
@@ -37,24 +49,12 @@
         }
     },
     {
-        "name": "Automated Music Transcription",
-        "thumbnail": "",
-        "description": "",
-        "text": "",
-        "images": [],
-        "tags": ["Python", "Music21", "Research", "Algorithms", "OOP"],
-        "date": "May 2025 - Nov 2025",
-        "links": {
-            "GitHub": ""
-        }
-    },
-    {
         "name": "Portfolio Website",
         "thumbnail": "",
         "description": "",
         "text": "",
         "images": [],
-        "tags": ["WIP", "HTML", "CSS", "JavaScript", "JSON", "Web Development"],
+        "tags": ["HTML", "CSS", "JavaScript", "JSON", "Web Development"],
         "date": "Nov 2025 - Present",
         "links": {
             "GitHub": "",
@@ -62,7 +62,7 @@
         }
     },
     {
-        "name": "Job Board Website",
+        "name": "Workwell Job Board",
         "thumbnail": "",
         "description": "",
         "text": "",
@@ -84,13 +84,37 @@
         }
     },
     {
+        "name": "Multiplayer Online Character Selection System",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["Computer Networking", "Unity", "C#", "Game Development"],
+        "date": "Mar 2025 - Apr 2025",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
         "name": "Scheduler App",
         "thumbnail": "",
         "description": "",
         "text": "",
         "images": [],
         "tags": ["Ruby", "CSV", "Data Structures", "Algorithms", "OOP"],
-        "date": "Feb 2025",
+        "date": "Feb 2025 - Mar 2025",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
+        "name": "Rocket League Recreation",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["Unity", "C#", "Game Development"],
+        "date": "Feb 2025 - Mar 2025",
         "links": {
             "GitHub": ""
         }
@@ -175,18 +199,6 @@
         "images": [],
         "tags": ["C", "Cache", "Linux"],
         "date": "Mar 2024 - Apr 2024",
-        "links": {
-            "GitHub": ""
-        }
-    },
-    {
-        "name": "Soduku Validator",
-        "thumbnail": "",
-        "description": "",
-        "text": "",
-        "images": [],
-        "tags": ["C", "Multithreading", "Linux"],
-        "date": "Feb 2024 - Mar 2024",
         "links": {
             "GitHub": ""
         }

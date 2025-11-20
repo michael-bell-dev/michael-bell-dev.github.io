@@ -64,3 +64,35 @@ h1, h2, p, a {
   10%, 90% { opacity: 0; }
   45%, 55% { opacity: var(--max-opacity); }
 }
+
+.project {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.project-text {
+  flex: 1;
+}
+
+.tag {
+  display: inline-block;
+  background-color: rgba(100, 149, 237, 0.2); /* Light semi-transparent blue */
+  color: #0645ad; /* Text color */
+  border-radius: 12px;  /* Rounded pill shape */
+  padding: 4px 10px;
+  margin: 2px;
+  font-size: 0.9em;
+}

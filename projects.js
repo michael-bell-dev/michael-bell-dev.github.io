@@ -8,10 +8,16 @@ fetch('projects.json')
       div.classList.add('project');
 
       div.innerHTML = `
-        <h2>${p.name}</h2>
         <img src="${p.thumbnail}" alt="${p.name}">
-        <p>${p.description}</p>
-        <p><strong>Tags:</strong> ${p.tags.join(', ')}</p>
+        <div class="project-text">
+          <h2>${p.name}</h2>
+          <p>${p.date}</p>
+          <p>${p.description}</p>
+          <p>
+            <!-- <strong>Tags:</strong> -->
+            ${p.tags.map(tag => `<span class="tag">${tag}</span>`).join(' ')}
+          </p>
+        </div>
       `;
 
       container.appendChild(div);
