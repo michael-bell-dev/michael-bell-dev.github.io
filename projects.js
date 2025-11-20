@@ -29,7 +29,6 @@ fetch('projects.json')
             <p>${p.date}</p>
             <p>${p.description}</p>
             <p>
-              <strong>Tags:</strong>
               ${p.tags.map(tag => `<span class="tag">${tag}</span>`).join(' ')}
             </p>
           </div>
