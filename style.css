@@ -97,12 +97,18 @@ h1, h2, p, a {
 
 .tag {
   display: inline-block;
-  background-color: rgba(100, 149, 237, 0.2); /* Light semi-transparent blue */
-  color: #0645ad; /* Text color */
-  border-radius: 12px;  /* Rounded pill shape */
+  background-color: rgba(100, 149, 237, 0.2);
+  color: #bac3d0;
+  border-radius: 12px;
   padding: 4px 10px;
   margin: 2px;
   font-size: 0.9em;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.tag:hover {
+  background-color: rgba(100, 149, 237, 0.35);
 }
 
 #pagination {

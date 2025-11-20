@@ -29,7 +29,7 @@ fetch('projects.json')
             <p>${p.date}</p>
             <p>${p.description}</p>
             <p>
-              ${p.tags.map(tag => `<span class="tag">${tag}</span>`).join(' ')}
+              ${p.tags.map(tag => `<span class="tag" data-tag="${tag}">${tag}</span>`).join(' ')}
             </p>
           </div>
         `;
@@ -41,6 +41,27 @@ fetch('projects.json')
           } else {
             div.classList.add('show');
           }
+
+          div.querySelectorAll('.tag').forEach(tagEl => {
+            tagEl.addEventListener('click', () => {
+              const tag = tagEl.dataset.tag.toLowerCase();
+
+              searchInput.value = tag;   // show it in the search box
+              animate = false;           // searching does NOT fade
+              filtered = projects.filter(p =>
+                p.tags.some(t => t.toLowerCase() === tag)
+              );
+
+              currentPage = 1;
+              renderPage(currentPage);
+
+              // scroll to top of page when tag filter applies
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              });
+            });
+          });
       });
 
       renderPagination();

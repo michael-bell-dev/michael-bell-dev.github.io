@@ -5,7 +5,7 @@
         "description": "A roguelike first person shooter with unlimited weapon customization.",
         "text": "",
         "images": [],
-        "tags": ["Unreal Engine", "Procedural Generation", "Game Development", "Data Structures", "OOP", "Algorithms"],
+        "tags": ["Unreal Engine", "Procedural Generation", "Game Development", "Ableton Live", "Adobe Illustrator", "Data Structures", "OOP", "Algorithms"],
         "date": "Aug 2024 - Present",
         "links": {
             "GitHub": "",
@@ -211,6 +211,30 @@
         "images": [],
         "tags": ["C", "Linux"],
         "date": "Feb 2024 - Mar 2024",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
+        "name": "Dream Defender",
+        "thumbnail": "",
+        "description": "Prototype of a combat based platformer.",
+        "text": "",
+        "images": [],
+        "tags": ["Unity", "C#", "Game Development"],
+        "date": "Feb 2024 - May 2024",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
+        "name": "Music Box",
+        "thumbnail": "",
+        "description": "Music-based sequential puzzle game with live music editing.",
+        "text": "",
+        "images": [],
+        "tags": ["Unity", "C#", "Game Development", "Ableton Live", "Adobe Photoshop"],
+        "date": "Nov 2023 - Dec 2023",
         "links": {
             "GitHub": ""
         }
