@@ -1,12 +1,11 @@
 body {
   margin: 0;
-  height: 100vh;
-  overflow: hidden;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at bottom, #27384a 0%, #090a0f 100%);
   position: relative;
 }
 
@@ -25,24 +24,24 @@ body {
   /* text-align: center; */
   flex: 1;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0;
   padding: 20px;
 }
 
 h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 3rem;
-    letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  letter-spacing: 2px;
 }
 
-h1, p, a {
+h1, h2, p, a {
   color: white;
   font-family: monospace;
 }
 
 .stars {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -62,5 +61,5 @@ h1, p, a {
 
 @keyframes twinkle {
   10%, 90% { opacity: 0; }
-  45%, 55% { opacity: 0.015; }
+  45%, 55% { opacity: 1; }
 }

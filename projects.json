@@ -1,0 +1,206 @@
+[
+    {
+        "name": "ScrapRush",
+        "thumbnail": "",
+        "description": "A roguelike first person shooter with unlimited weapon customization.",
+        "text": "",
+        "images": [],
+        "tags": ["WIP", "Unreal Engine", "Game", "Procedural Generation", "Data Structures", "OOP", "Algorithms"],
+        "date": "Aug 2024 - Present",
+        "links": {
+            "GitHub": "",
+            "Demo": ""
+        }
+    },
+    {
+        "name": "LA NCSA Website",
+        "thumbnail": "",
+        "description": "Migrating an existing website from NationBuilder to Wix.",
+        "text": "",
+        "images": [],
+        "tags": ["WIP", "JavaScript", "Web Development", "CSV", "Wix"],
+        "date": "Sep 2025 - Present",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
+        "name": "Deep Learning Neural Network",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["AI", "Python", "JupyterNotebook", "Data Science", "CSV", "Deep Learning", "Neural Network"],
+        "date": "Nov 2025 - Dec 2025",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
+        "name": "Automated Music Transcription",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["Python", "Music21", "Research", "Algorithms", "OOP"],
+        "date": "May 2025 - Nov 2025",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
+        "name": "Portfolio Website",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["WIP", "HTML", "CSS", "JavaScript", "JSON", "Web Development"],
+        "date": "Nov 2025 - Present",
+        "links": {
+            "GitHub": "",
+            "Demo": ""
+        }
+    },
+    {
+        "name": "Job Board Website",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["Ruby", "PostgreSQL", "HTML", "CSS", "JavaScript", "BootStrap", "Rails", "MVC", "Web Development", "Linux"],
+        "date": "Feb 2025 - May 2025",
+        "links": {
+        }
+    },
+    {
+        "name": "JobLinker",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["Ruby", "PostgreSQL", "HTML", "CSS", "JavaScript", "BootStrap", "Rails", "MVC", "Web Development", "Linux"],
+        "date": "Feb 2025 - Apr 2025",
+        "links": {
+        }
+    },
+    {
+        "name": "Scheduler App",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["Ruby", "CSV", "Data Structures", "Algorithms", "OOP"],
+        "date": "Feb 2025",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
+        "name": "YellowRose",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["C++", "VST", "JUCE"],
+        "date": "Nov 2024 - Dec 2024",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
+        "name": "Animal Farm",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["Unity", "C#", "AI", "Voice Recognition", "Hugging Face API",  "Game Development", "HCI"],
+        "date": "Nov 2024 - Dec 2024",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
+        "name": "Service Agent",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["AI", "Python", "Voice Recognition", "MediaPipe"],
+        "date": "Nov 2024 - Dec 2024",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
+        "name": "Motion Detector",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["AI", "Python", "Object Tracking", "MediaPipe"],
+        "date": "Nov 2024 - Dec 2024",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
+        "name": "Client-Server Chatroom",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["C", "Computer Networking", "Multithreading", "Sockets"],
+        "date": "Apr 2024 - May 2024",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
+        "name": "Silvies Valley Ranch Database",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["PostgreSQL", "JavaScript", "HTML", "CSS", "Web Development", "Linux"],
+        "date": "Mar 2024 - May 2024",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
+        "name": "Virtual Memory System",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["C", "Cache", "Linux"],
+        "date": "Mar 2024 - Apr 2024",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
+        "name": "Soduku Validator",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["C", "Multithreading", "Linux"],
+        "date": "Feb 2024 - Mar 2024",
+        "links": {
+            "GitHub": ""
+        }
+    },
+    {
+        "name": "Command Line Terminal",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "tags": ["C", "Linux"],
+        "date": "Feb 2024",
+        "links": {
+            "GitHub": ""
+        }
+    }
+]

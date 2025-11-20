@@ -8,15 +8,17 @@ for (let i = 0; i < numStars; i++) {
   
   const x = Math.random() * 100;
   const y = Math.random() * 100;
-  const size = Math.pow(Math.random(), 3) * 180;
+  const size = Math.pow(Math.random(), 3) * 100 + 5;
+  const opacity = Math.random() * 0.3;
 
+  star.style.opacity = opacity;
   star.style.left = `${x}%`;
   star.style.top = `${y}%`;
   star.style.width = `${size}px`;
   star.style.height = `${size}px`;
 
   const duration = 10 + Math.random() * 30;
-  const delay = Math.random() * 10;
+  const delay = Math.random() * 8 + 1;
   star.style.animationDuration = `${duration}s`;
   star.style.animationDelay = `${delay}s`;
 
