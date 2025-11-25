@@ -42,7 +42,7 @@
         "description": "Simple AI model created with unsupervised learning techniques.",
         "text": "",
         "images": [],
-        "tags": ["AI", "Python", "Jupyter Notebook", "Data Science", "CSV", "Deep Learning", "Neural Network"],
+        "tags": ["AI", "Python", "PyTorch", "Jupyter Notebook", "Data Science", "CSV", "Deep Learning", "Neural Network"],
         "date": "Nov 2025 - Dec 2025",
         "links": {
             "GitHub": ""
