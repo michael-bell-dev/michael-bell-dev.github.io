@@ -3,13 +3,12 @@
         "name": "ScrapRush",
         "thumbnail": "images/ScrapRushLogoBetter.png",
         "description": "A roguelike first person shooter with unlimited weapon customization.",
-        "text": "",
+        "text": "ScrapRush is a roguelike first person shooter game with over one decillion weapons for players to create. It started as a personal project to teach myself Unreal Engine, then became my Senior Thesis project for my Bachelor's degree in Interactive Multimedia at TCNJ. Since graduation, I have continued to work on the game and plan to eventually release it to the public. I also independently produced all music in Ableton Live 11 and created all 100+ inventory icons in Adobe Illustrator.\n\nThe core gameplay loop involves exploring a randomly generated world, collecting different \"scraps\" (bullet types or weapon modifiers), to defeat enemies in increasingly powerful ways. Each playthrough is unique due to the random layout of the map, with unique scraps found in each area. Players can create any weapon they can imagine, from a shotgun that shoots bouncing fireballs to a sniper rifle that fires homing rockets. The only limits are players' own creativity.\n\nThe custom weapon system is built using custom classes for weapons and bullets. There are six child weapon classes (pistol, shotgun, sniper rifle, assault rifle, rocket launcher, and knife) with unique behaviors or base stats. Each weapon has an array for scraps with a random size. This array simply stores enums for the 100+ scraps in the game. When firing a weapon, the weapon class loops through the scraps and applies modifiers until a bullet is fired. The modified values are then passed to the new bullet instance. Bullet types have attributes that can be modified by scraps, such as damage, speed, size, and special effects like homing or bouncing. Bullet classes also each have their own intrinsic behavior, usually determined by their unique implementation of the collision_behavior function. For example, a regular bullet will simply deal damage on impact, but an explosive bullet will create an area-of-effect.\n\nEnemies also have unique behaviors and attack patterns, created using behavior trees and blackboards. Additionally, the enemies exclusively use weapons made from the same weapon system as the player, allowing for a wide variety of enemy attack styles and allowing the player to reverse-engineer any enemy weapon they encounter.\n\nThe random map generation is done using a modular room system. Each room is a separate object that can be connected to other rooms via doorways. The map generator randomly selects and connects rooms to create a unique layout for each playthrough. Rooms are separated into categories based on area, where each area has a start and an end room, with themed rooms in between. This way, the generator can create a path from start to end, then add additional side rooms for exploration.",
         "images": [],
         "tags": ["Unreal Engine", "Procedural Generation", "Game Development", "Ableton Live", "Adobe Illustrator", "Data Structures", "OOP", "Algorithms"],
         "date": "Aug 2024 - Present",
         "links": {
-            "GitHub": "",
-            "Demo": ""
+            "GitHub": "https://github.com/michael-bell-dev/ScrapRush"
         }
     },
     {
@@ -31,7 +30,7 @@
         "text": "",
         "images": [],
         "tags": ["JavaScript", "Web Development", "CSV", "Wix"],
-        "date": "Sep 2025 - Present",
+        "date": "Sep 2025 - Dec 2025",
         "links": {
             "GitHub": ""
         }
@@ -81,6 +80,17 @@
         "images": [],
         "tags": ["Ruby", "PostgreSQL", "HTML", "CSS", "JavaScript", "BootStrap", "Rails", "MVC", "Web Development", "Linux"],
         "date": "Feb 2025 - May 2025",
+        "links": {
+        }
+    },
+    {
+        "name": "Dinner Rush",
+        "thumbnail": "",
+        "description": "A restaurant game where you take orders, make pizza, and bus tables.",
+        "text": "",
+        "images": [],
+        "tags": ["Unity", "C#", "Game Development", "OOP"],
+        "date": "Apr 2025 - May 2025",
         "links": {
         }
     },
