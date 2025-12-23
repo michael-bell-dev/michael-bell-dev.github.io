@@ -8,7 +8,8 @@
         "tags": ["Unreal Engine", "Procedural Generation", "Game Development", "Ableton Live", "Adobe Illustrator", "Data Structures", "OOP", "Algorithms"],
         "date": "Aug 2024 - Present",
         "links": {
-            "GitHub": "https://github.com/michael-bell-dev/ScrapRush"
+            "GitHub": "https://github.com/michael-bell-dev/ScrapRush",
+            "Demo": "https://zmitter.itch.io/scraprush"
         }
     },
     {
@@ -20,7 +21,7 @@
         "tags": ["Python", "Music21", "XML", "Algorithms", "OOP"],
         "date": "May 2025 - Dec 2025",
         "links": {
-            "GitHub": ""
+            "GitHub": "https://github.com/michael-bell-dev/music21_piano_validation"
         }
     },
     {
@@ -32,7 +33,7 @@
         "tags": ["JavaScript", "Web Development", "CSV", "Wix"],
         "date": "Sep 2025 - Dec 2025",
         "links": {
-            "GitHub": ""
+            "Website": "https://lisahart5.wixsite.com/lancsa"
         }
     },
     {
@@ -56,8 +57,8 @@
         "tags": ["HTML", "CSS", "JavaScript", "JSON", "Web Development"],
         "date": "Nov 2025 - Present",
         "links": {
-            "GitHub": "",
-            "Demo": ""
+            "GitHub": "https://github.com/michael-bell-dev/michael-bell-dev.github.io",
+            "Website": "https://michael-bell-dev.github.io/"
         }
     },
     {
@@ -246,7 +247,8 @@
         "tags": ["Unity", "C#", "Game Development"],
         "date": "Feb 2024 - May 2024",
         "links": {
-            "GitHub": ""
+            "GitHub": "",
+            "Demo": "https://zmitter.itch.io/dream-defender"
         }
     },
     {
@@ -258,7 +260,8 @@
         "tags": ["Unity", "C#", "Game Development", "Ableton Live", "Adobe Photoshop"],
         "date": "Nov 2023 - Dec 2023",
         "links": {
-            "GitHub": ""
+            "GitHub": "",
+            "Demo": "https://zmitter.itch.io/music-box"
         }
     }
 
