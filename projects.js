@@ -46,8 +46,8 @@ fetch('projects.json')
             tagEl.addEventListener('click', () => {
               const tag = tagEl.dataset.tag.toLowerCase();
 
-              searchInput.value = tag;   // show it in the search box
-              animate = false;           // searching does NOT fade
+              searchInput.value = tag;
+              animate = false;
               filtered = projects.filter(p =>
                 p.tags.some(t => t.toLowerCase() === tag)
               );
@@ -55,7 +55,6 @@ fetch('projects.json')
               currentPage = 1;
               renderPage(currentPage);
 
-              // scroll to top of page when tag filter applies
               window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
