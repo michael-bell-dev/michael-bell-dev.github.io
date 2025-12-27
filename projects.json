@@ -10,7 +10,8 @@
         "links": {
             "GitHub": "https://github.com/michael-bell-dev/ScrapRush",
             "Demo": "https://zmitter.itch.io/scraprush"
-        }
+        },
+        "slug": "scraprush"
     },
     {
         "name": "Automated Music Transcription",
@@ -22,7 +23,8 @@
         "date": "May 2025 - Dec 2025",
         "links": {
             "GitHub": "https://github.com/michael-bell-dev/music21_piano_validation"
-        }
+        },
+        "slug": "automated-music-transcription"
     },
     {
         "name": "LA NCSA Website",
@@ -34,7 +36,8 @@
         "date": "Sep 2025 - Dec 2025",
         "links": {
             "Website": "https://lisahart5.wixsite.com/lancsa"
-        }
+        },
+        "slug": "la-ncsa-website"
     },
     {
         "name": "Deep Learning Neural Network",
@@ -45,8 +48,8 @@
         "tags": ["AI", "Python", "PyTorch", "Jupyter Notebook", "Data Science", "CSV", "Deep Learning", "Neural Network"],
         "date": "Nov 2025 - Dec 2025",
         "links": {
-            "GitHub": ""
-        }
+        },
+        "slug": "deep-learning-neural-network"
     },
     {
         "name": "Portfolio Website",
@@ -59,7 +62,8 @@
         "links": {
             "GitHub": "https://github.com/michael-bell-dev/michael-bell-dev.github.io",
             "Website": "https://michael-bell-dev.github.io/"
-        }
+        },
+        "slug": "portfolio-website"
     },
     {
         "name": "Monster Battle Arena",
@@ -70,8 +74,8 @@
         "tags": ["C++", "Game Development", "OOP"],
         "date": "Sept 2025 - Oct 2025",
         "links": {
-            "GitHub": ""
-        }
+        },
+        "slug": "monster-battle-arena"
     },
     {
         "name": "Workwell Job Board",
@@ -82,7 +86,8 @@
         "tags": ["Ruby", "PostgreSQL", "HTML", "CSS", "JavaScript", "BootStrap", "Rails", "MVC", "Web Development", "Linux"],
         "date": "Feb 2025 - May 2025",
         "links": {
-        }
+        },
+        "slug": "workwell-job-board"
     },
     {
         "name": "Dinner Rush",
@@ -93,8 +98,8 @@
         "tags": ["Unity", "C#", "Game Development", "OOP"],
         "date": "Apr 2025 - May 2025",
         "links": {
-            "GitHub": ""
-        }
+        },
+        "slug": "dinner-rush"
     },
     {
         "name": "JobLinker",
@@ -105,7 +110,8 @@
         "tags": ["Ruby", "PostgreSQL", "HTML", "CSS", "JavaScript", "BootStrap", "Rails", "MVC", "Web Development", "Linux"],
         "date": "Feb 2025 - Apr 2025",
         "links": {
-        }
+        },
+        "slug": "joblinker"
     },
     {
         "name": "Multiplayer Online Character Selection System",
@@ -116,8 +122,8 @@
         "tags": ["Computer Networking", "Unity", "C#", "Game Development"],
         "date": "Mar 2025 - Apr 2025",
         "links": {
-            "GitHub": ""
-        }
+        },
+        "slug": "multiplayer-online-character-selection-system"
     },
     {
         "name": "Scheduler App",
@@ -128,8 +134,8 @@
         "tags": ["Ruby", "CSV", "Data Structures", "Algorithms", "OOP"],
         "date": "Feb 2025 - Mar 2025",
         "links": {
-            "GitHub": ""
-        }
+        },
+        "slug": "scheduler-app"
     },
     {
         "name": "Rocket League Recreation",
@@ -140,8 +146,8 @@
         "tags": ["Unity", "C#", "Game Development"],
         "date": "Feb 2025 - Mar 2025",
         "links": {
-            "GitHub": ""
-        }
+        },
+        "slug": "rocket-league-recreation"
     },
     {
         "name": "YellowRose",
@@ -152,8 +158,8 @@
         "tags": ["C++", "VST", "JUCE"],
         "date": "Nov 2024 - Dec 2024",
         "links": {
-            "GitHub": ""
-        }
+        },
+        "slug": "yellowrose"
     },
     {
         "name": "Animal Farm",
@@ -164,8 +170,8 @@
         "tags": ["Unity", "C#", "AI", "Voice Recognition", "Hugging Face API",  "Game Development", "HCI"],
         "date": "Nov 2024 - Dec 2024",
         "links": {
-            "GitHub": ""
-        }
+        },
+        "slug": "animal-farm"
     },
     {
         "name": "Service Agent",
@@ -176,8 +182,8 @@
         "tags": ["AI", "Python", "Voice Recognition", "pyttsx3"],
         "date": "Nov 2024 - Dec 2024",
         "links": {
-            "GitHub": ""
-        }
+        },
+        "slug": "service-agent"
     },
     {
         "name": "Motion Detector",
@@ -188,8 +194,8 @@
         "tags": ["AI", "Python", "Computer Vision", "MediaPipe"],
         "date": "Nov 2024 - Dec 2024",
         "links": {
-            "GitHub": ""
-        }
+        },
+        "slug": "motion-detector"
     },
     {
         "name": "Client-Server Chatroom",
@@ -200,8 +206,8 @@
         "tags": ["C", "Computer Networking", "Multithreading", "Sockets"],
         "date": "Apr 2024 - May 2024",
         "links": {
-            "GitHub": ""
-        }
+        },
+        "slug": "client-server-chatroom"
     },
     {
         "name": "Silvies Valley Ranch Database",
@@ -212,8 +218,8 @@
         "tags": ["PostgreSQL", "JavaScript", "HTML", "CSS", "Web Development", "Linux"],
         "date": "Mar 2024 - May 2024",
         "links": {
-            "GitHub": ""
-        }
+        },
+        "slug": "silvies-valley-ranch-database"
     },
     {
         "name": "Virtual Memory System",
@@ -224,8 +230,8 @@
         "tags": ["C", "Cache", "Linux"],
         "date": "Mar 2024 - Apr 2024",
         "links": {
-            "GitHub": ""
-        }
+        },
+        "slug": "virtual-memory-system"
     },
     {
         "name": "Command Line Terminal",
@@ -236,8 +242,8 @@
         "tags": ["C", "Linux"],
         "date": "Feb 2024 - Mar 2024",
         "links": {
-            "GitHub": ""
-        }
+        },
+        "slug": "command-line-terminal"
     },
     {
         "name": "Dream Defender",
@@ -249,7 +255,8 @@
         "date": "Feb 2024 - May 2024",
         "links": {
             "Demo": "https://zmitter.itch.io/dream-defender"
-        }
+        },
+        "slug": "dream-defender"
     },
     {
         "name": "Music Box",
@@ -261,7 +268,8 @@
         "date": "Nov 2023 - Dec 2023",
         "links": {
             "Demo": "https://zmitter.itch.io/music-box"
-        }
+        },
+        "slug": "music-box"
     }
 
 ]

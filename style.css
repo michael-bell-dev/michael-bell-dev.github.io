@@ -107,7 +107,7 @@ h1, h2, p, a {
   transition: background 0.2s, transform 0.15s;
 }
 
-.tag:hover {
+.tag:hover, .project-link:hover {
   background-color: rgba(100, 149, 237, 0.35);
 }
 
@@ -138,4 +138,23 @@ h1, h2, p, a {
   border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.2);
   font-size: 1rem;
+}
+
+.project-text {
+  white-space: pre-line;
+}
+
+.project-links {
+  margin: 1.5rem 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid currentColor;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
 }

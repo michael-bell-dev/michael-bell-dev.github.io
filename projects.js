@@ -19,8 +19,9 @@ fetch('projects.json')
       const pageItems = filtered.slice(start, end);
 
       pageItems.forEach(p => {
-        const div = document.createElement('div');
+        const div = document.createElement('a');
         div.classList.add('project');
+        div.href = `project.html?slug=${p.slug}`;
 
         div.innerHTML = `
           <img src="${p.thumbnail}" alt="${p.name}">
