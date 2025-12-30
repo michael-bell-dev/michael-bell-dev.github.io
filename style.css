@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  min-height: 100vh;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -33,11 +34,21 @@ h1 {
   padding: 0;
   font-size: 3rem;
   letter-spacing: 2px;
+  text-align: center;
+}
+
+.project-header h2, .project-header .project-date {
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, p, a {
   color: white;
   font-family: monospace;
+}
+
+a {
+  text-decoration: none;
 }
 
 .stars {
@@ -77,6 +88,7 @@ h1, h2, p, a {
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.4s ease, transform 0.4s ease;
+  transition: background 0.15s, transform 0.15s;
 }
 
 .project.show {
@@ -91,8 +103,39 @@ h1, h2, p, a {
   object-fit: cover;
 }
 
-.project-text {
+.project-desc {
   flex: 1;
+  margin: 40px;
+  white-space: pre-line;
+}
+
+.project:hover {
+  background-color: rgba(53, 78, 123, 0.35);
+}
+
+.project-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  /* margin-bottom: 0.5rem; */
+}
+
+.project-links {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-link {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid currentColor;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.2s, transform 0.15s;
+  corner-shape: squircle;
 }
 
 .tag {
@@ -105,6 +148,15 @@ h1, h2, p, a {
   font-size: 0.9em;
   cursor: pointer;
   transition: background 0.2s, transform 0.15s;
+  corner-shape: squircle;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
 }
 
 .tag:hover, .project-link:hover {
@@ -138,23 +190,4 @@ h1, h2, p, a {
   border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.2);
   font-size: 1rem;
-}
-
-.project-text {
-  white-space: pre-line;
-}
-
-.project-links {
-  margin: 1.5rem 0;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.project-link {
-  padding: 0.4rem 0.8rem;
-  border: 1px solid currentColor;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 0.9rem;
 }

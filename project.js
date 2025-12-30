@@ -21,16 +21,27 @@ fetch('projects.json')
         .join('')
       : '';
 
+    const tagsHTML = project.tags
+      ? project.tags
+          .map(tag =>
+            `<span class="tag">${tag}</span>`
+          )
+          .join('')
+      : '';
+
     document.title = project.name;
 
     document.getElementById('project').innerHTML = `
-    
       <h1>${project.name}</h1>
+
+      <div class="tags">
+        ${tagsHTML}
+      </div>
 
       <div class="project-links">
         ${linksHTML}
       </div>
       
-      <p class="project-text">${project.text}</p>
+      <p class="project-desc">${project.text}</p>
     `;
   });
