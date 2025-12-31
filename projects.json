@@ -15,7 +15,7 @@
     },
     {
         "name": "Automated Music Transcription",
-        "thumbnail": "",
+        "thumbnail": "images/AutomatedMusicTranscription.png",
         "description": "Research in transcribing existing scores to new sets of instruments.",
         "text": "The automated music transcription project aims to develop an algorithm that takes an existing score and generate a new arrangement with any set of instruments that is both playable and faithful to the original. Previous students have advanced this project to the point where a polyphonic part can be reduced to a limited number of simultaneous voices, split into separate monophonic lines, and assigned to specific monophonic instruments, all while preserving the integrity of the piece. While their contributions can create scores for monophonic instruments, we can not yet validate parts for polyphonic instruments. My work focuses on bridging this gap towards polyphony by creating an algorithm that determines if a score is playable by a single pianist.\n\nUsing the Music21 Python library, my program takes into account three main constraints for piano playability: maximum number of notes, maximum intervals between fingers, and tied notes locking fingers in place. The program assumes a finger can play up to 2 notes, if those notes are consecutive white keys. Additionally, the thumb is allowed to play consecutive black keys. This leads to an absolute maximum of 20 notes at once, or 10 fingers, before a chord is automatically assumed to be impossible. The program then checks the intervals between notes to ensure that no finger is required to stretch beyond what is possible for the user. At runtime, a txt file is read where the user can customize their own maximum hand span and finger distances so the algorithm checks playability for their specific hand size. Finally, tied notes are checked to ensure they remain in the same hand, and can be entirely moved to the other hand's part if it creates complications.\n\nThe program outputs a new MusicXML file containing the new piano arrangement of the piece. Any chords determined to be unplayable are highlighted in red for the user to clearly see. Hand assignments are generally very intuitive, with a realistic left- and right-hand split. In testing, the algorithm has correctly classified every piece as playable or unplayable according to the human pianist's hand limitations.\n\nFuture work will expand this algorithm to other polyphonic instruments, such as the guitar. A general polyphonic validation framework with customizable rules for each instrument, when merged with the previous reduction, separation, and arrangement work that has already been done, would allow for a complete system capable of automatically arranging any score into a new playable arrangement for any set of monophonic or polyphonic instruments.\n\nOverall, this project made me a better researcher and programmer by working with a complex library like Music21 and implementing advanced algorithms to solve a real-world problem in music transcription and arrangement.",
         "images": [],
@@ -41,7 +41,7 @@
     },
     {
         "name": "Deep Learning Neural Network",
-        "thumbnail": "",
+        "thumbnail": "images/pytorch-logo-1.png",
         "description": "Simple AI model created with supervised learning techniques.",
         "text": "The objectives of this Data Science project were to practice defining and training neural network models using PyTorch and exploring the impact of neural network hidden layer size on its ability to capture complex patterns in a synthetic data set.\n\nI generated a synthetic classification dataset using a set of Y vs (X1, X2) data based on a mathmatical model for both X1 and X2 in a specified range. This data was then passed through a signum function, which returns 1 for positive numbers and -1 for negative numbers. Using a PyTorch neural network models with two fully connected linear layers and one hidden sigmoidal layer, I trained versions of the model with different numbers of neurons that make up the single hidden layer. After training was complete, the ability of each model to properly classify the data was assesed by observing the final training loss and calculating the model accuracy.\n\nThe results of this experiment showed that as the number of neurons in the hidden layer increased, the model's ability to capture complex patterns in the data improved. Models with larger hidden layers achieved lower training losses and higher accuracies, indicating that they were better able to learn the underlying relationships in the data. However, there were diminishing returns as the hidden layer size increased, with very large hidden layers showing only marginal improvements in performance compared to moderately sized ones. This suggests that while increasing model complexity can enhance learning, there is a point beyond which additional complexity yields limited benefits.\n\nOverall, this project provided valuable insights into the relationship between neural network architecture and performance, highlighting the importance of selecting an appropriate model size for effective learning.",
         "images": [],
@@ -53,7 +53,7 @@
     },
     {
         "name": "Portfolio Website",
-        "thumbnail": "",
+        "thumbnail": "images/michaelbelldev.png",
         "description": "Stylized website to display my past and current projects.",
         "text": "This portfolio website was created to showcase my skills and projects as a developer. Built using HTML, CSS, and JavaScript, the website features a clean design that highlights my work in an organized manner. The site includes a search function to easily find projects based on title or tags. The site is hosted on GitHub Pages for easy access and sharing. Overall, this portfolio website serves as a professional platform to present my development experience and capabilities.",
         "images": [],
@@ -67,7 +67,7 @@
     },
     {
         "name": "Monster Battle Arena",
-        "thumbnail": "",
+        "thumbnail": "images/MonsterBattleArena.png",
         "description": "A text based battle simulation between different monster types.",
         "text": "The goal of this project was to create a turn-based console text game using C++ in which two teams of monsters battle. This battle simulation has each team line up single file to face the other, with only the lead monster taking an action each turn. For every turn, the lead monster attacks the opposing lead monster, dealing damage and using any abilities it possesses. If a monster's health reaches zero, it is removed from the battle and the next monster in line takes its place. The battle continues until one team has no remaining monsters.\n\nEach monster belongs to a specific class, such as Goblin, Troll, or Orc, each with unique attributes and abilities. These classes are implemented using inheritance and polymorphism to allow for easy expansion and modification of monster types. Overall, this project provided valuable experience in C++ programming, object-oriented design principles, and implementing game mechanics in a console application. Additionally, it taught me how to properly balance game elements to create an engaging experience, as the three monster types work in a rock-paper-scissors-esque relationship.",
         "images": [],
@@ -91,7 +91,7 @@
     },
     {
         "name": "Dinner Rush",
-        "thumbnail": "",
+        "thumbnail": "images/dinnerrush.png",
         "description": "A restaurant game where you take orders, make pizza, and bus tables.",
         "text": "Dinner Rush is a time-management game developed in Unity using C# in a team of three. The game challenges players to efficiently manage a restaurant by taking customer orders, preparing food, and cleaning tables. Score is based on customer satisfaction and speed of service. The game features multiple levels with increasing difficulty, introducing new challenges such as more complex orders and a higher volume of customers. Players must balance their time and resources to keep the restaurant running smoothly and achieve high scores.\n\nOverall, this project provided valuable experience in game development, teamwork, and implementing game mechanics in Unity.",
         "images": [],
@@ -115,7 +115,7 @@
     },
     {
         "name": "Multiplayer Online Character Selection System",
-        "thumbnail": "",
+        "thumbnail": "images/Networking.png",
         "description": "Pick your character and enter a world with friends.",
         "text": "This is an independent experiment combining two computer science labs on computer networking and persistent data storage. The goal of this experiment was to create a multiplayer framework in Unity that allows players to select a character from a list, type their username, and enter a shared online world with other players. Data such as name and character are stored using a custom persistent class made using C#, and networking is handled using Unity.netcode with NetworkVariables sending and receiving data from the server to all connected clients.\n\nOverall, this project provided valuable insights into multiplayer game development, networking protocols, and data persistence techniques within the Unity engine, and will act as a foundation for future multiplayer projects.",
         "images": [],
@@ -127,7 +127,7 @@
     },
     {
         "name": "Scheduler App",
-        "thumbnail": "",
+        "thumbnail": "images/scheduler.png",
         "description": "Automatically book available rooms using the date and duration of your event.",
         "text": "This app created in Ruby allows users to input the date and duration of an event they are looking to schedule, along with the anticipated number of attendees. The app then searches through a CSV file containing all rooms, which includes information about building, room number, capacity, and whether food is permitted in the room. It reads another CSV file containing all existing bookings, including date, start time, end time, and room. Using this information, the app determines which rooms are available for the requested date and time that also meet the capacity requirement. There are various checks that the app performs to ensure that the event runs as smoothly as possible. For example, events will only be scheduled in a single building if multiple rooms are required. Addionally, certain requirements for HackTCNJ events are automatically enforced, such as requiring both group and individual work rooms, as well as meal breaks every 6 hours. An hour long intro and outro session are also automatically added to HackTCNJ events, which must be held in a single room that can hold the entire capacity of the eveny.\n\nOverall, this project provided valuable experience in Ruby programming, data manipulation using CSV files, and implementing scheduling algorithms to efficiently allocate resources based on user requirements.",
         "images": [],
@@ -139,7 +139,7 @@
     },
     {
         "name": "Rocket League Recreation",
-        "thumbnail": "",
+        "thumbnail": "images/rocketleague.png",
         "description": "Simple recreation of the popular game using Unity.",
         "text": "This recreation of Rocket League was built in Unity and programmed in C#. The game features all of the core mechanics and controls of the original game, including driving, boosting, jumping, and powersilding. The physics of the car and ball were tuned using the Unity rigidbody system until it felt fun to use. The game includes a basic AI opponent system where the AI will attempt to chase the ball and jump at random intervals.\n\nA game design document was also written to outline the core mechanics, controls, and features of the game. This document served as a guide throughout the development process, ensuring that the final product aligned with the original vision for the game. This taught me how to think more abstractly in terms of the high concept and key features, and showed me the importance of understanding the first minute, gameflow, and victory conditions.\n\nOverall, this project provided valuable experience in game development using Unity, physics tuning, AI programming, and game design documentation.",
         "images": [],
@@ -163,7 +163,7 @@
     },
     {
         "name": "Animal Farm",
-        "thumbnail": "",
+        "thumbnail": "images/animalfarm.png",
         "description": "Animal matching game for children with voice-controlled navigation.",
         "text": "Animal Farm is a simple animal matching game developed by a team of four. The game is designed for children, with a focus on accessability by including voice controls for navigation and selection. Players can use voice commands to select animals and navigate through the game menus, making it easier for young children to play without needing to use a keyboard or mouse. These voice recognition features were made possible by the use of the Hugging Face API, and create a much more engaging experience for players.\n\nThe game features colorful graphics and engaging sound effects to create an enjoyable experience for players. The core gameplay loop involves matching an animal to its silhouette. Upon a successful match, the player is rewarded by adding that animal to their farm. The player is also prompted to make that animal's sound with their voice, which is recorded. This sound will be played back if the player clicks on that animal on their farm.\n\nOverall, this project provided valuable experience in Unity game development, voice recognition integration, and teamwork in a collaborative environment.",
         "images": [],
@@ -175,8 +175,8 @@
     },
     {
         "name": "Service Agent",
-        "thumbnail": "",
-        "description": "AI assistant with voice controlled commands.",
+        "thumbnail": "images/agent.png",
+        "description": "AI voice assistant with voice controlled commands.",
         "text": "This simple service agent was built in Python to practice working with voice recognition and text-to-speech APIs. The agent listens for voice commands from the user, processes them using the speech_recognition library, and responds with synthesized speech using the pyttsx3 library. The agent can perform basic tasks such as answering questions about account information, providing technical support, providing product information, and directing users to relevant resources. The agent is designed to be user-friendly and efficient, providing quick and accurate responses to user inquiries. Navigation is also made easy, as the user will be taken backwards by a step if they say \"back.\"",
         "images": [],
         "tags": ["AI", "Python", "Voice Recognition", "pyttsx3"],
@@ -187,7 +187,7 @@
     },
     {
         "name": "Motion Detector",
-        "thumbnail": "",
+        "thumbnail": "images/HandRaise.png",
         "description": "Object tracking algorithm to detect raised hands, nodding, and shaking your head.",
         "text": "This project uses Google's opensource MediaPipe framework to implement a motion detection algorithm in Python. The program uses a webcam to capture live video feed and processes each frame to detect specific motions: raised hands, nodding, and shaking your head. By analyzing the position and movement of key facial landmarks and body parts, the algorithm can accurately identify these motions in real-time. This project provided valuable experience in computer vision, motion detection algorithms, and working with the MediaPipe framework.",
         "images": [],
@@ -199,7 +199,7 @@
     },
     {
         "name": "Client-Server Chatroom",
-        "thumbnail": "",
+        "thumbnail": "images/chatroom.png",
         "description": "Live chatroom with room selection.",
         "text": "In a team of two, I developed a client-server chatroom application using C and socket programming. The application allows multiple clients to connect to a central server and join different chat rooms to communicate with each other in real-time. The server manages the connections and routes messages between clients in the same chat room. Clients on the otherhand can send and receive messages. The application is designed to be efficient and scalable, allowing for a large number of concurrent users. Both the client and server programs use multiple threads to handle incoming and outgoing messages simultaneously, ensuring smooth communication without delays.\n\nClients can choose from a list of available chat rooms upon connecting to the server, or they can start their own. Upon joining a room, clients create a username for themselves, and are assigned a random color to differentiate their messages from others. The chat interface displays messages in real-time, with each message prefixed by the sender's username in their assigned color. The server handles new users joining and leaving the chatroom, and will print a message to the room when this occurs.\n\nThis project provided valuable experience in network programming, multithreading, and socket communication using C.",
         "images": [],
@@ -223,9 +223,9 @@
     },
     {
         "name": "Virtual Memory System",
-        "thumbnail": "",
-        "description": "Compares efficiency of caching algorithms: FIFO, LRU, and LFU",
-        "text": "In a team of two, I developed a virtual memory system in C to compare the efficiency of three caching algorithms: FIFO (First-In-First-Out), LRU (Least Recently Used), and LFU (Least Frequently Used). The system simulates a virtual memory environment and tracks how each algorithm performs in terms of cache hits and misses. The project involved implementing each algorithm from scratch, analyzing their performance on various data access patterns, and comparing their effectiveness in managing memory resources. The results of the simulations provided insights into the strengths and weaknesses of each caching strategy, helping to understand their practical applications in real-world systems. This project provided valuable experience in C programming, algorithm implementation, and performance analysis.",
+        "thumbnail": "images/VirtualMemory.png",
+        "description": "Compares efficiency of caching algorithms: FIFO and LRU",
+        "text": "In a team of two, I developed a virtual memory system in C to compare the efficiency of two caching algorithms: FIFO (First-In-First-Out) and LRU (Least Recently Used). The system simulates a virtual memory environment and tracks how each algorithm performs in terms of cache hits and misses. The project involved implementing each algorithm from scratch, analyzing their performance on various data access patterns, and comparing their effectiveness in managing memory resources. The results of the simulations provided insights into the strengths and weaknesses of each caching strategy, helping to understand their practical applications in real-world systems. This project provided valuable experience in C programming, algorithm implementation, and performance analysis.",
         "images": [],
         "tags": ["C", "Cache", "Linux"],
         "date": "Mar 2024 - Apr 2024",
@@ -235,8 +235,8 @@
     },
     {
         "name": "Command Line Terminal",
-        "thumbnail": "",
-        "description": "",
+        "thumbnail": "images/commandterminal.png",
+        "description": "A command line terminal that mimics Linux terminal functionality.",
         "text": "I developed a command line terminal in C that mimics the functionality of a standard Linux terminal. The terminal supports common commands such as ls, cd, pwd, and echo, along with the ability to run external programs. It also includes features like tab completion for commands and file names, and the ability to redirect output to files or pipes. The project involved implementing a shell that can parse and execute commands, handle input/output redirection, and manage processes. This project provided valuable experience in C programming, system calls, and process management.",
         "images": [],
         "tags": ["C", "Linux"],
@@ -247,7 +247,7 @@
     },
     {
         "name": "Dream Defender",
-        "thumbnail": "",
+        "thumbnail": "images/dreamdefender.png",
         "description": "Prototype of a combat based platformer.",
         "text": "In a team of five, I developed a prototype for Dream Defender, a combat-based platformer game built in Unity using C#. The game features combat mechanics, platforming challenges, and a variety of enemy types. Players control a character who must navigate through a map filled with obstacles and enemies. The prototype focuses on refining the core gameplay mechanics, ensuring responsive and fun controls on keyboard and gamepad such as dashing, walljumping, pogoing, and koyote time. This project provided valuable experience in Unity game development, teamwork, and implementing complex game mechanics.",
         "images": [],
@@ -260,7 +260,7 @@
     },
     {
         "name": "Music Box",
-        "thumbnail": "",
+        "thumbnail": "images/musicbox.png",
         "description": "Music-based sequential puzzle game with live music editing.",
         "text": "Music Box is a music-based sequential puzzle game developed in Unity using C#. The game features a unique mechanic where players can edit the background music in real-time using in-game interfaces. Using this custom audio system I created, players can input melodies, add/alter instruments, adjust drum patterns, and even play the piano to solve puzzles and progress through levels. The game challenges players to think creatively about how music can influence gameplay, requiring them to manipulate the soundtrack to unlock new puzzles to solve. This project provided valuable experience in Unity game development, audio programming, and integrating music editing features into gameplay.",
         "images": [],

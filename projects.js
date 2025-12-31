@@ -31,7 +31,7 @@ fetch('projects.json')
               <span class="project-date">${p.date}</span>
             </div>
 
-            ${p.description}
+            <p>${p.description}</p>
             <p>${p.tags.map(tag => `<span class="tag" data-tag="${tag}">${tag}</span>`).join(' ')}</p>
           </div>
         `;
