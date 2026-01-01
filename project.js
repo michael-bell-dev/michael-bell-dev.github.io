@@ -22,12 +22,14 @@ fetch('projects.json')
       : '';
 
     const tagsHTML = project.tags
-      ? project.tags
-          .map(tag =>
-            `<span class="tag">${tag}</span>`
-          )
-          .join('')
-      : '';
+    ? project.tags
+        .map(tag =>
+          `<a href="index.html?search=${encodeURIComponent(tag)}" class="tag">
+            ${tag}
+          </a>`
+        )
+        .join('')
+    : '';
 
     document.title = project.name;
 

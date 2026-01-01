@@ -45,7 +45,9 @@ fetch('projects.json')
           }
 
           div.querySelectorAll('.tag').forEach(tagEl => {
-            tagEl.addEventListener('click', () => {
+            tagEl.addEventListener('click', (e) => {
+              e.preventDefault();
+              e.stopPropagation();
               const tag = tagEl.dataset.tag.toLowerCase();
 
               searchInput.value = tag;
@@ -107,6 +109,14 @@ fetch('projects.json')
 
       currentPage = 1;
       renderPage(currentPage);
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const searchFromURL = params.get('search');
+
+    if (searchFromURL) {
+      searchInput.value = searchFromURL;
+      applySearch();
     }
 
     searchInput.addEventListener('input', applySearch);
