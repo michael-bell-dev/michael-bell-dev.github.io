@@ -140,7 +140,7 @@
     {
         "name": "Rocket League Recreation",
         "thumbnail": "images/rocketleague.png",
-        "description": "Simple recreation of the popular game using Unity.",
+        "description": "Simple recreation of a popular game using Unity.",
         "text": "This recreation of Rocket League was built in Unity and programmed in C#. The game features all of the core mechanics and controls of the original game, including driving, boosting, jumping, and powersilding. The physics of the car and ball were tuned using the Unity rigidbody system until it felt fun to use. The game includes a basic AI opponent system where the AI will attempt to chase the ball and jump at random intervals.\n\nA game design document was also written to outline the core mechanics, controls, and features of the game. This document served as a guide throughout the development process, ensuring that the final product aligned with the original vision for the game. This taught me how to think more abstractly in terms of the high concept and key features, and showed me the importance of understanding the first minute, gameflow, and victory conditions.\n\nOverall, this project provided valuable experience in game development using Unity, physics tuning, AI programming, and game design documentation.",
         "images": [],
         "tags": ["Unity", "C#", "Game Development"],
