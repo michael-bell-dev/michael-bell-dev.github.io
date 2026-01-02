@@ -114,7 +114,7 @@
         "slug": "joblinker"
     },
     {
-        "name": "Multiplayer Online Character Selection System",
+        "name": "Multiplayer Character Selection",
         "thumbnail": "images/Networking.png",
         "description": "Pick your character and enter a world with friends.",
         "text": "This is an independent experiment combining two computer science labs on computer networking and persistent data storage. The goal of this experiment was to create a multiplayer framework in Unity that allows players to select a character from a list, type their username, and enter a shared online world with other players. Data such as name and character are stored using a custom persistent class made using C#, and networking is handled using Unity.netcode with NetworkVariables sending and receiving data from the server to all connected clients.\n\nOverall, this project provided valuable insights into multiplayer game development, networking protocols, and data persistence techniques within the Unity engine, and will act as a foundation for future multiplayer projects.",
