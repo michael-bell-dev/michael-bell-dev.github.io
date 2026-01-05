@@ -197,3 +197,55 @@ a {
   border: 1px solid rgba(0,0,0,0.2);
   font-size: 1rem;
 }
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  /* overflow: hidden; */
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  transition: transform 0.4s ease;
+}
+
+.images img {
+  width: 300px;
+  flex-shrink: 0;
+  margin: 0 5px;
+  opacity: 0.4;
+  transform: scale(0.85);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.images img.active {
+  opacity: 1;
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow.left { left: 10px; }
+.arrow.right { right: 10px; }
+
+.viewport {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  /* overflow: hidden; */
+}
