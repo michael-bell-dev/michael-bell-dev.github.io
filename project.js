@@ -44,7 +44,7 @@ fetch('projects.json')
 
       <div class="tags">${tagsHTML}</div>
 
-      <div class="slideshow">
+      <!-- <div class="slideshow">
         <button class="arrow left">‹</button>
 
           <div class="images">
@@ -52,45 +52,45 @@ fetch('projects.json')
           </div>
 
         <button class="arrow right">›</button>
-      </div>
+      </div> -->
 
       <div class="project-links">${linksHTML}</div>
       <p class="project-desc">${project.text}</p>
     `;
 
-    const images = document.querySelectorAll('.images img');
-    const container = document.querySelector('.images');
-    let index = 0;
+    // const images = document.querySelectorAll('.images img');
+    // const container = document.querySelector('.images');
+    // let index = 0;
 
-    function updateSlideshow() {
-      images.forEach((img, i) => {
-        img.classList.toggle('active', i === index);
-      });
+    // function updateSlideshow() {
+    //   images.forEach((img, i) => {
+    //     img.classList.toggle('active', i === index);
+    //   });
 
-      const viewport = container.parentElement;
-      const viewportWidth = viewport.offsetWidth;
+    //   const viewport = container.parentElement;
+    //   const viewportWidth = viewport.offsetWidth;
 
-      const imageWidth = images[0].offsetWidth;
-      const gap = 10;
-      const totalImageWidth = imageWidth + gap;
+    //   const imageWidth = images[0].offsetWidth;
+    //   const gap = 10;
+    //   const totalImageWidth = imageWidth + gap;
 
-      const offset =
-        (viewportWidth / 2) -
-        (imageWidth / 2) -
-        (index * totalImageWidth);
+    //   const offset =
+    //     (viewportWidth / 2) -
+    //     (imageWidth / 2) -
+    //     (index * totalImageWidth);
 
-      container.style.transform = `translateX(${offset}px)`;
-    }
+    //   container.style.transform = `translateX(${offset}px)`;
+    // }
 
-    document.querySelector('.arrow.left').addEventListener('click', () => {
-      index = (index - 1 + images.length) % images.length;
-      updateSlideshow();
-    });
+    // document.querySelector('.arrow.left').addEventListener('click', () => {
+    //   index = (index - 1 + images.length) % images.length;
+    //   updateSlideshow();
+    // });
 
-    document.querySelector('.arrow.right').addEventListener('click', () => {
-      index = (index + 1) % images.length;
-      updateSlideshow();
-    });
+    // document.querySelector('.arrow.right').addEventListener('click', () => {
+    //   index = (index + 1) % images.length;
+    //   updateSlideshow();
+    // });
 
-    updateSlideshow();
+    // updateSlideshow();
   });
