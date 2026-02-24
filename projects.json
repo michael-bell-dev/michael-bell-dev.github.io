@@ -1,5 +1,18 @@
 [
     {
+        "name": "Langfuse Trace Importer",
+        "thumbnail": "images/langfuse.jpg",
+        "description": "A Python script that fixes a Vapi/Langfuse compatibility issue.",
+        "text": "During my time at AI Visionary Labs I was tasked with researching Langfuse, a tool for evaluating and debugging AI applications. More specifically, I was tasked with learning about Langfuse Playground, a web interface for visualizing and analyzing traces of AI applications that allows users to change the system prompt, user messages, assistant messages, or tool calls while replaying a conversation trace to monitor how behavior changes.\n\nWhile experimenting with Langfuse Playground, I found that any trace including tool calls would completely fail, rendering the entire feature useless for debugging the types of applications I was working on. After investigating the issue, I found that the problem was due to a mismatch between the expected format of tool calls in Langfuse and the format of the call logs sent by Vapi. Variable names in Vapi are camelCase, while Langfuse expects snake_case. To solve this problem, I created a Python script that converts these improperly formatted traces into the expected format for Langfuse, and then imports them into Langfuse using their API.\n\nThe script reads in a JSON file containing the original trace, converts all variable names from camelCase to snake_case, and then sends the modified trace to the Langfuse API for import. This allows me to successfully import traces with tool calls into Langfuse and use the Playground for debugging. Additionally, some formatting changes to the new trace were needed to get the prieview trace working, which allowed users to view the entire call log when they select the trace - an invalueble Langfuse QOL feature that also happens to be a requirement for another one of Langfuse's advanced evaluation features: LLM as a Judge.\n\nOverall, this project provided valuable experience in working with APIs, data transformation, and debugging tools for AI applications.",
+        "images": ["images/langfuse1.png", "images/langfuse2.png", "images/langfuse3.png", "images/langfuse4.png"],
+        "tags": ["Python", "API", "JSON", "Langfuse", "Vapi", "Bugfixing"],
+        "date": "Jan 2026 - Feb 2026",
+        "links": {
+            "GitHub": "https://github.com/michael-bell-dev/langfuse_trace_importer"
+        },
+        "slug": "langfuse-trace-importer"
+    },
+    {
         "name": "ScrapRush",
         "thumbnail": "images/ScrapRushLogoBetter.png",
         "description": "A roguelike first person shooter with unlimited weapon customization.",
