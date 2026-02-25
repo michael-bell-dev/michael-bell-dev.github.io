@@ -212,7 +212,7 @@ a {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .images {
@@ -275,4 +275,5 @@ a {
   font-family: monospace;
   padding: 0.4rem 0.8rem;
   transition: background 0.2s, transform 0.15s;
+  z-index: 10;
 }

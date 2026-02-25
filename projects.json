@@ -1,11 +1,24 @@
 [
     {
+        "name": "Vapi Eval Runner",
+        "thumbnail": "images/vapi.avif",
+        "description": "A Python script to automatically run Vapi evaluations in bulk.",
+        "text": "During my time at AI Visionary Labs I was tasked with researching the Eval feature of Vapi, a tool for evaluating AI applications that is currently in beta, in an attempt to find a tool that can be used for regression testing. This Eval feature allows users to create custom evaluations that they can run on a Vapi agent or squad. Unfortunately, the current beta version of the feature is lacking important funtionality, such as the ability to run evaluations on a schedule, automatically, or in bulk, or additionally the ability to save an agent to an eval at all. This means that in order to utilize the new Eval feature of Vapi, you must do each test manually and select the agent or squad before each test.\n\nTo solve this problem, I created a Python script that uses the Vapi API to automatically run evaluations in bulk. The script reads in a CSV file containing all necessary information for each test, such as the evalId, the agentId or squadId to test, and any other relevant parameters. The script then uses this information to create and run each eval automatically, multiple times each, using the Vapi API. This allows for easy regression testing and monitoring of changes in behavior over time. Eventually, my focused moved to Vapi Test Suites, a separate Vapi feature that is fully in production and more targeted towards automated testing.\n\nOverall, this project provided valuable experience in working with APIs, data manipulation using CSV files, and automating tasks to improve efficiency in testing AI applications. Additionally, I gained understanding of the Vapi platform and its capabilities, which will be useful for future projects and evaluations, and of regression tests as a whole, which I had little experience in before this project.",
+        "images": ["images/vapi3.webp", "images/vapi1.png", "images/vapi2.png"],
+        "tags": ["AI", "Python", "API", "CI/CD", "Vapi", "CSV"],
+        "date": "Feb 2026",
+        "links": {
+            "GitHub": "https://github.com/michael-bell-dev/vapi-eval-runner"
+        },
+        "slug": "vapi-eval-runner"
+    },
+    {
         "name": "Langfuse Trace Importer",
-        "thumbnail": "images/langfuse.jpg",
+        "thumbnail": "images/langfuse.png",
         "description": "A Python script that fixes a Vapi/Langfuse compatibility issue.",
         "text": "During my time at AI Visionary Labs I was tasked with researching Langfuse, a tool for evaluating and debugging AI applications. More specifically, I was tasked with learning about Langfuse Playground, a web interface for visualizing and analyzing traces of AI applications that allows users to change the system prompt, user messages, assistant messages, or tool calls while replaying a conversation trace to monitor how behavior changes.\n\nWhile experimenting with Langfuse Playground, I found that any trace including tool calls would completely fail, rendering the entire feature useless for debugging the types of applications I was working on. After investigating the issue, I found that the problem was due to a mismatch between the expected format of tool calls in Langfuse and the format of the call logs sent by Vapi. Variable names in Vapi are camelCase, while Langfuse expects snake_case. To solve this problem, I created a Python script that converts these improperly formatted traces into the expected format for Langfuse, and then imports them into Langfuse using their API.\n\nThe script reads in a JSON file containing the original trace, converts all variable names from camelCase to snake_case, and then sends the modified trace to the Langfuse API for import. This allows me to successfully import traces with tool calls into Langfuse and use the Playground for debugging. Additionally, some formatting changes to the new trace were needed to get the prieview trace working, which allowed users to view the entire call log when they select the trace - an invalueble Langfuse QOL feature that also happens to be a requirement for another one of Langfuse's advanced evaluation features: LLM as a Judge.\n\nOverall, this project provided valuable experience in working with APIs, data transformation, and debugging tools for AI applications.",
         "images": ["images/langfuse1.png", "images/langfuse2.png", "images/langfuse3.png", "images/langfuse4.png"],
-        "tags": ["Python", "API", "JSON", "Langfuse", "Vapi", "Bugfixing"],
+        "tags": ["AI", "Python", "API", "JSON", "Langfuse", "Vapi", "Bugfixing"],
         "date": "Jan 2026 - Feb 2026",
         "links": {
             "GitHub": "https://github.com/michael-bell-dev/langfuse_trace_importer"
@@ -44,9 +57,9 @@
         "thumbnail": "images/NCSA.png",
         "description": "Migrating an existing website from NationBuilder to Wix.",
         "text": "The Los Angeles Neighborhood Council Sustainability Alliance (LA NCSA) is a nonprofit organization focused on promoting sustainability initiatives within local communities. Their previous website was built on the NationBuilder platform, which presented several challenges to the team. As a volunteer web developer, I was tasked with migrating the website to Wix, a more user-friendly and flexible platform.\n\nThe migration process involved several key steps. First, I created an event system similar to the one they used on NationBuilder, allowing them to easily manage new events, with automatic addition to the \"Past Events\" page after the event date. This was done originally using a custom CMS table and JavaScript to dynamically generate event cards, as the automatic past events feature was the most important feature to the client. This also saved the client from having to manually create a static page for each event, which was what they did in their previous site. After further discussion with the client, I transfered this functionallity to the built in Event system in Wix, which provides a more robust event management system.\n\nNext, I created a custom contact form that adds new submissions to a Wix database, allowing for easy management of inquiries and bulk emails. Custom logic was required to include each new menber's Neighborhood Council in the built in Contact database, allowing the client to filter contacts by Neighborhood Council when sending bulk emails.\n\nFinally, I migrated all existing static content from the old website to the new website, ensuring that all information was accurate and up-to-date. This involved manually copying text and importing images and pdfs to the new site. I also ensured that any links to other pages, events, or custom media were replaced with the new Wix links.\n\nOverall, the migration process was successful, and the new Wix website provided the LA NCSA with a more user-friendly and flexible platform to manage their online presence. I included documentation for the client to easily update and maintain the website in the future.",
-        "images": ["images/ncsaimage1.png", "images/ncsaimage2.png", "images/ncsaimage3.png", "images/ncsaimage4.png", "images/ncsaimage5.png", "images/ncsaimage6.png"],
+        "images": ["images/ncsaimage1.png", "images/ncsaimage3.png", "images/ncsaimage4.png", "images/ncsaimage5.png", "images/ncsaimage2.png"],
         "tags": ["JavaScript", "Web Development", "CSV", "Wix"],
-        "date": "Sep 2025 - Dec 2025",
+        "date": "Sep 2025 - Feb 2026",
         "links": {
             "Website": "https://lisahart5.wixsite.com/lancsa"
         },
@@ -107,7 +120,7 @@
         "thumbnail": "images/dinnerrush.png",
         "description": "A restaurant game where you take orders, make pizza, and bus tables.",
         "text": "Dinner Rush is a time-management game developed in Unity using C# in a team of three. The game challenges players to efficiently manage a restaurant by taking customer orders, preparing food, and cleaning tables. Score is based on customer satisfaction and speed of service. The game features multiple levels with increasing difficulty, introducing new challenges such as more complex orders and a higher volume of customers. Players must balance their time and resources to keep the restaurant running smoothly and achieve high scores.\n\nOverall, this project provided valuable experience in game development, teamwork, and implementing game mechanics in Unity.",
-        "images": [],
+        "images": ["images/dinnerrush1.png", "images/dinnerrush2.png", "images/dinnerrush3.png", "images/dinnerrush4.png"],
         "tags": ["Unity", "C#", "Game Development", "OOP"],
         "date": "Apr 2025 - May 2025",
         "links": {
@@ -215,7 +228,7 @@
         "thumbnail": "images/chatroom.png",
         "description": "Live chatroom with room selection.",
         "text": "In a team of two, I developed a client-server chatroom application using C and socket programming. The application allows multiple clients to connect to a central server and join different chat rooms to communicate with each other in real-time. The server manages the connections and routes messages between clients in the same chat room. Clients on the otherhand can send and receive messages. The application is designed to be efficient and scalable, allowing for a large number of concurrent users. Both the client and server programs use multiple threads to handle incoming and outgoing messages simultaneously, ensuring smooth communication without delays.\n\nClients can choose from a list of available chat rooms upon connecting to the server, or they can start their own. Upon joining a room, clients create a username for themselves, and are assigned a random color to differentiate their messages from others. The chat interface displays messages in real-time, with each message prefixed by the sender's username in their assigned color. The server handles new users joining and leaving the chatroom, and will print a message to the room when this occurs.\n\nThis project provided valuable experience in network programming, multithreading, and socket communication using C.",
-        "images": [],
+        "images": ["images/chatroom0.png", "images/chatroom1.png"],
         "tags": ["C", "Computer Networking", "Multithreading", "Sockets"],
         "date": "Apr 2024 - May 2024",
         "links": {
@@ -227,7 +240,7 @@
         "thumbnail": "images/Silvies.jpg",
         "description": "Website for tracking goat deaths per season/year.",
         "text": "In a team of three, I developed a web application for Silvies Valley Ranch to track kid goat deaths over time using a custom PostgreSQL database. The application allows ranch staff to log goat deaths with relevant details such as date and age. I created nine useful queries to analyze the data, including total deaths per season/year, average age at death, and average weaning, winter, and sale weight of the goats. I also created a quiery to find the standard deviation, but as it was a PostgreSQL query doing complex math, it was incredibly slow to run on the large datasets, so it was ultimately not included in the final application.\n\nThe web interface was built using HTML, CSS, and JavaScript, providing a user-friendly way for staff to view graphical reports. Overall, this project provided valuable experience in database design, SQL querying, and full-stack web development.",
-        "images": [],
+        "images": ["images/silvies1.png", "images/silvies2.png", "images/silvies3.png", "images/silvies4.png"],
         "tags": ["PostgreSQL", "JavaScript", "HTML", "CSS", "Web Development", "Linux"],
         "date": "Mar 2024 - May 2024",
         "links": {

@@ -63,21 +63,17 @@ fetch('projects.json')
     let index = 0;
 
     function updateSlideshow() {
+      if (!images.length) return;
+
       images.forEach((img, i) => {
         img.classList.toggle('active', i === index);
       });
 
       const viewport = container.parentElement;
       const viewportWidth = viewport.offsetWidth;
-
       const imageWidth = images[0].offsetWidth;
       const gap = 10;
-      const totalImageWidth = imageWidth + gap;
-
-      const offset =
-        (viewportWidth / 2) -
-        (imageWidth / 2) -
-        (index * totalImageWidth);
+      const offset = (viewportWidth / 2) - (imageWidth / 2) - (index * (imageWidth + gap));
 
       container.style.transform = `translateX(${offset}px)`;
     }
@@ -92,5 +88,10 @@ fetch('projects.json')
       updateSlideshow();
     });
 
-    updateSlideshow();
+    const imageArray = Array.from(images);
+    if (imageArray.length) {
+      Promise.all(
+        imageArray.map(img => img.complete ? Promise.resolve() : new Promise(r => img.onload = r))
+      ).then(updateSlideshow);
+    }
   });

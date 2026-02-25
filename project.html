@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title id="page-title"></title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="header"></div>
-        <a class="back-link" href="index.html">← Back</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title"></title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <div class="content">
-            <main id="project"></main>
-        </div>
+<body>
+    <div id="header"></div>
 
-        <script src="project.js"></script>
-        
-        <div id="footer"></div>
-    </body>
+    <a class="back-link" id="backLink" href="index.html">← Back</a>
+
+    <div class="content">
+        <main id="project"></main>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="project.js"></script>
 
     <script>
         async function loadHTML(id, url) {
@@ -25,8 +26,21 @@
             const response = await fetch(url);
             element.innerHTML = await response.text();
         }
-        
+
+        const params = new URLSearchParams(window.location.search);
+
+        params.delete('slug');
+
+        const backLink = document.getElementById('backLink');
+
+        const queryString = params.toString();
+
+        backLink.href = queryString
+            ? `index.html?${queryString}`
+            : 'index.html';
+
         loadHTML("header", "header.html");
         loadHTML("footer", "footer.html");
     </script>
+</body>
 </html>

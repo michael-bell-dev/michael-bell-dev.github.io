@@ -21,7 +21,15 @@ fetch('projects.json')
       pageItems.forEach(p => {
         const div = document.createElement('a');
         div.classList.add('project');
-        div.href = `project.html?slug=${p.slug}`;
+        const currentSearch = encodeURIComponent(searchInput.value);
+        let myURL = `project.html?slug=${p.slug}`;
+        if (currentSearch) {
+          myURL += `&search=${currentSearch}`;
+        }
+        if (page > 1) {
+          myURL += `&page=${page}`;
+        }
+        div.href = myURL;
 
         div.innerHTML = `
           <img src="${p.thumbnail}" alt="${p.name}">
@@ -120,6 +128,17 @@ fetch('projects.json')
     }
 
     searchInput.addEventListener('input', applySearch);
+
+    const pageFromURL = parseInt(params.get('page'));
+
+    if (searchFromURL) {
+    searchInput.value = searchFromURL;
+    applySearch();
+    }
+
+    if (pageFromURL) {
+    currentPage = pageFromURL;
+    }
 
     renderPage(currentPage);
   });
