@@ -1,5 +1,5 @@
   const starsContainer = document.querySelector('.stars');
-  const numStars = 50;
+  const numStars = 60;
   const stars = [];
 
   for (let i = 0; i < numStars; i++) {
@@ -8,8 +8,8 @@
     
     const x = Math.random() * 100;
     const y = Math.random() * 100;
-    const size = Math.pow(Math.random(), 3) * 100 + 5;
-    const opacity = Math.random() * 0.05;
+    const size = Math.pow(Math.random(), 3) * 130 + 1;
+    const opacity = Math.random() * 0.05 + 0.005;
 
     star.style.setProperty('--max-opacity', opacity);
     star.style.opacity = 0;
@@ -31,8 +31,8 @@
       element: star,
       x,
       y,
-      dx: (Math.random() - 0.5) * 0.02,
-      dy: (Math.random() - 0.5) * 0.02
+      dx: (Math.random() - 0.5) * 0.03,
+      dy: (Math.random() - 0.5) * 0.03
     });
   }
 
