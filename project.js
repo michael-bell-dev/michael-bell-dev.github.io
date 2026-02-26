@@ -43,7 +43,6 @@ fetch('projects.json')
       <h1>${project.name}</h1>
 
       <div class="tags">${tagsHTML}</div>
-
       <div class="slideshow">
         <button class="arrow left">‹</button>
 
