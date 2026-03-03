@@ -224,7 +224,7 @@ a {
 }
 
 .images img {
-  width: min(400px, 80vw);
+  width: min(500px, 70vw);
   max-width: 100%;
   height: auto;
   max-height: 400px;
@@ -241,6 +241,21 @@ a {
   opacity: 1;
   transform: scale(1.1);
   z-index: 2;
+}
+
+.subtitles {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.subtitle {
+  display: none;
+  max-width: 700px;
+  margin: 0 auto;
+  color: white;
+  font-family: monospace;
+  font-size: 0.7rem;
+  opacity: 0.8;
 }
 
 .arrow {

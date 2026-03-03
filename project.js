@@ -37,6 +37,16 @@ fetch('projects.json')
           .join('')
       : '';
 
+    const subtitlesHTML = project.subtitles
+      ? project.subtitles
+          .map(subtitle => `
+            <div class="subtitle">
+              ${subtitle}
+            </div>
+          `)
+          .join('')
+      : '';
+
     document.title = project.name;
 
     document.getElementById('project').innerHTML = `
@@ -50,6 +60,10 @@ fetch('projects.json')
             ${imagesHTML}
           </div>
 
+          <div class="subtitles">
+            ${subtitlesHTML}
+          </div>
+
         <button class="arrow right">›</button>
       </div>
 
@@ -59,6 +73,8 @@ fetch('projects.json')
 
     const images = document.querySelectorAll('.images img');
     const container = document.querySelector('.images');
+    const subtitleContainer = document.querySelector('.subtitles');
+    const subtitles = document.querySelectorAll('.subtitles .subtitle');
     let index = 0;
 
     function updateSlideshow() {
@@ -68,11 +84,19 @@ fetch('projects.json')
         img.classList.toggle('active', i === index);
       });
 
+      subtitles.forEach((sub, i) => {
+        sub.style.display = i === index ? 'block' : 'none';
+      });
+
       const viewport = container.parentElement;
       const viewportWidth = viewport.offsetWidth;
       const imageWidth = images[0].offsetWidth;
       const gap = 10;
-      const offset = (viewportWidth / 2) - (imageWidth / 2) - (index * (imageWidth + gap));
+
+      const offset =
+        (viewportWidth / 2) -
+        (imageWidth / 2) -
+        (index * (imageWidth + gap));
 
       container.style.transform = `translateX(${offset}px)`;
     }
