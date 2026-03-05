@@ -209,7 +209,7 @@
         "text": "Animal Farm is a simple animal matching game developed by a team of four. The game is designed for children, with a focus on accessability by including voice controls for navigation and selection. Players can use voice commands to select animals and navigate through the game menus, making it easier for young children to play without needing to use a keyboard or mouse. These voice recognition features were made possible by the use of the Hugging Face API, and create a much more engaging experience for players.\n\nThe game features colorful graphics and engaging sound effects to create an enjoyable experience for players. The core gameplay loop involves matching an animal to its silhouette. Upon a successful match, the player is rewarded by adding that animal to their farm. The player is also prompted to make that animal's sound with their voice, which is recorded. This sound will be played back if the player clicks on that animal on their farm.\n\nOverall, this project provided valuable experience in Unity game development, voice recognition integration, and teamwork in a collaborative environment.",
         "images": ["images/animalfarmimage1.png", "images/animalfarmimage2.png", "images/animalfarmimage3.png", "images/animalfarmimage4.png"],
         "subtitles": ["In-game screenshot of a farm full of animals that walk around. Clicking on an animal plays its sound.", "Screenshot of the matching game. Users can drag the correct animal to the silhouette or speak the name of the correct animal into the microphone.", "Screenshot of the recording interface, shown after a correct match.", "An empty farm at the start of the game, with an options button in the top left corner."],
-        "tags": ["Unity", "C#", "AI", "Voice Recognition", "Hugging Face API",  "Game Development", "HCI"],
+        "tags": ["Unity", "C#", "AI", "API", "Hugging Face", "Voice Recognition", "Game Development", "HCI"],
         "date": "Nov 2024 - Dec 2024",
         "links": {
         },
@@ -222,7 +222,7 @@
         "text": "This simple service agent was built in Python to practice working with voice recognition and text-to-speech APIs. The agent listens for voice commands from the user, processes them using the speech_recognition library, and responds with synthesized speech using the pyttsx3 library. The agent can perform basic tasks such as answering questions about account information, providing technical support, providing product information, and directing users to relevant resources. The agent is designed to be user-friendly and efficient, providing quick and accurate responses to user inquiries. Navigation is also made easy, as the user will be taken backwards by a step if they say \"back.\"",
         "images": [],
         "subtitles": [],
-        "tags": ["AI", "Python", "Voice Recognition", "pyttsx3"],
+        "tags": ["AI", "Python", "API", "Voice Recognition", "pyttsx3"],
         "date": "Nov 2024 - Dec 2024",
         "links": {
         },
@@ -235,7 +235,7 @@
         "text": "This project uses Google's opensource MediaPipe framework to implement a motion detection algorithm in Python. The program uses a webcam to capture live video feed and processes each frame to detect specific motions: raised hands, nodding, and shaking your head. By analyzing the position and movement of key facial landmarks and body parts, the algorithm can accurately identify these motions in real-time. This project provided valuable experience in computer vision, motion detection algorithms, and working with the MediaPipe framework.",
         "images": ["images/motiondetectorimage1.png", "images/motiondetectorimage2.png"],
         "subtitles": ["Screenshot of the hand-raising detector, which outputs text when a hand is raised or lowered, specifying which hand it was.", "Screenshot of the nodding detector, which outputs yes or no based on the detected motion."],
-        "tags": ["AI", "Python", "Computer Vision", "MediaPipe"],
+        "tags": ["AI", "Python", "API", "Computer Vision", "MediaPipe"],
         "date": "Nov 2024 - Dec 2024",
         "links": {
         },

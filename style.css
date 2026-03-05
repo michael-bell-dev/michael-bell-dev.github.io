@@ -47,9 +47,16 @@ h1 {
 }
 
 .project-date {
-  position: absolute;
-  right: 16px;
-  top: 16px;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.project-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;   /* allows date to move underneath */
+  gap: 6px;
 }
 
 h1, h2, p, a {
@@ -291,4 +298,52 @@ a {
   padding: 0.4rem 0.8rem;
   transition: background 0.2s, transform 0.15s;
   z-index: 10;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .project {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .project img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    align-self: center;
+  }
+
+  .project-text {
+    width: 100%;
+    padding: 0;
+  }
+
+  .project-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .project-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-header .project-date {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  #search {
+    width: 90%;
+    max-width: 500px;
+    margin: 10px auto 20px auto;
+  }
+
+  /* .project-text .tag {
+    display: none;
+  } */
 }

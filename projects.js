@@ -34,12 +34,12 @@ fetch('projects.json')
         div.innerHTML = `
           <img src="${p.thumbnail}" alt="${p.name}">
           <div class="project-text">
-            <div class="project-header">
-              <h2>${p.name}</h2>
-              <span class="project-date">${p.date}</span>
-            </div>
+            <h2>${p.name}</h2>
 
-            <p>${p.description}</p>
+            <span class="project-date">${p.date}</span>
+
+            <p>\n\n${p.description}</p>
+
             <p>${p.tags.map(tag => `<span class="tag" data-tag="${tag}">${tag}</span>`).join(' ')}</p>
           </div>
         `;
