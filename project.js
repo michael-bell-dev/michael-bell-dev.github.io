@@ -14,9 +14,7 @@ fetch('projects.json')
     const linksHTML = project.links
       ? Object.entries(project.links)
           .map(([label, url]) =>
-            `<a href="${url}" target="_blank" rel="noopener" class="project-link">
-              ${label}
-            </a>`
+            `<a href="${url}" target="_blank" rel="noopener" class="project-link">${label}</a>`
           )
           .join('')
       : '';
@@ -27,34 +25,24 @@ fetch('projects.json')
           .join('')
       : '';
 
+    const subtitlesHTML = project.subtitles
+      ? project.subtitles
+          .map(subtitle => `<div class="subtitle">${subtitle}</div>`)
+          .join('')
+      : '';
+
     const tagsHTML = project.tags
       ? project.tags
           .map(tag =>
-            `<a href="index.html?search=${encodeURIComponent(tag)}" class="tag">
-              ${tag}
-            </a>`
+            `<a href="index.html?search=${encodeURIComponent(tag)}" class="tag">${tag}</a>`
           )
           .join('')
       : '';
 
-    const subtitlesHTML = project.subtitles
-      ? project.subtitles
-          .map(subtitle => `
-            <div class="subtitle">
-              ${subtitle}
-            </div>
-          `)
-          .join('')
-      : '';
-
-    document.title = project.name;
-
-    document.getElementById('project').innerHTML = `
-      <h1>${project.name}</h1>
-
-      <div class="tags">${tagsHTML}</div>
-      <div class="slideshow">
-        <button class="arrow left">‹</button>
+    const slideshowHTML = imagesHTML
+      ? `
+        <div class="slideshow">
+          <button class="arrow left">‹</button>
 
           <div class="images">
             ${imagesHTML}
@@ -64,57 +52,63 @@ fetch('projects.json')
             ${subtitlesHTML}
           </div>
 
-        <button class="arrow right">›</button>
-      </div>
+          <button class="arrow right">›</button>
+        </div>
+      `
+      : '';
 
+    document.title = project.name;
+
+    document.getElementById('project').innerHTML = `
+      <h1>${project.name}</h1>
+      <div class="tags">${tagsHTML}</div>
+      ${slideshowHTML}
       <div class="project-links">${linksHTML}</div>
       <p class="project-desc">${project.text}</p>
     `;
 
-    const images = document.querySelectorAll('.images img');
-    const container = document.querySelector('.images');
-    const subtitleContainer = document.querySelector('.subtitles');
-    const subtitles = document.querySelectorAll('.subtitles .subtitle');
-    let index = 0;
+    if (imagesHTML) {
+      const images = document.querySelectorAll('.images img');
+      const container = document.querySelector('.images');
+      const subtitleContainer = document.querySelector('.subtitles');
+      const subtitles = document.querySelectorAll('.subtitles .subtitle');
+      let index = 0;
 
-    function updateSlideshow() {
-      if (!images.length) return;
+      function updateSlideshow() {
+        if (!images.length) return;
 
-      images.forEach((img, i) => {
-        img.classList.toggle('active', i === index);
+        images.forEach((img, i) => img.classList.toggle('active', i === index));
+        subtitles.forEach((sub, i) => sub.style.display = i === index ? 'block' : 'none');
+
+        const viewport = container.parentElement;
+        const viewportWidth = viewport.offsetWidth;
+        const imageWidth = images[0].offsetWidth;
+        const gap = 10;
+
+        const offset = (viewportWidth / 2) - (imageWidth / 2) - (index * (imageWidth + gap));
+        container.style.transform = `translateX(${offset}px)`;
+      }
+
+      document.querySelector('.arrow.left').addEventListener('click', () => {
+        index = (index - 1 + images.length) % images.length;
+        updateSlideshow();
       });
 
-      subtitles.forEach((sub, i) => {
-        sub.style.display = i === index ? 'block' : 'none';
+      document.querySelector('.arrow.right').addEventListener('click', () => {
+        index = (index + 1) % images.length;
+        updateSlideshow();
       });
 
-      const viewport = container.parentElement;
-      const viewportWidth = viewport.offsetWidth;
-      const imageWidth = images[0].offsetWidth;
-      const gap = 10;
-
-      const offset =
-        (viewportWidth / 2) -
-        (imageWidth / 2) -
-        (index * (imageWidth + gap));
-
-      container.style.transform = `translateX(${offset}px)`;
+      // Wait for all images to load before showing first slide
+      const imageArray = Array.from(images);
+      if (imageArray.length) {
+        Promise.all(
+          imageArray.map(img => img.complete ? Promise.resolve() : new Promise(r => img.onload = r))
+        ).then(updateSlideshow);
+      }
     }
-
-    document.querySelector('.arrow.left').addEventListener('click', () => {
-      index = (index - 1 + images.length) % images.length;
-      updateSlideshow();
-    });
-
-    document.querySelector('.arrow.right').addEventListener('click', () => {
-      index = (index + 1) % images.length;
-      updateSlideshow();
-    });
-
-    const imageArray = Array.from(images);
-    if (imageArray.length) {
-      Promise.all(
-        imageArray.map(img => img.complete ? Promise.resolve() : new Promise(r => img.onload = r))
-      ).then(updateSlideshow);
-    }
+  })
+  .catch(err => {
+    console.error(err);
+    document.getElementById('project').innerHTML = '<h1>Error loading project</h1>';
   });
