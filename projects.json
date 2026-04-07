@@ -43,6 +43,20 @@
         "slug": "scraprush"
     },
     {
+        "name": "LA NCSA Website",
+        "thumbnail": "images/NCSA.png",
+        "description": "Migrating an existing website from NationBuilder to Wix.",
+        "text": "The Los Angeles Neighborhood Council Sustainability Alliance (LA NCSA) is a nonprofit organization focused on promoting sustainability initiatives within local communities. Their previous website was built on the NationBuilder platform, which presented several challenges to the team. As a volunteer web developer, I was tasked with migrating the website to Wix, a more user-friendly and flexible platform.\n\nThe migration process involved several key steps. First, I created an event system similar to the one they used on NationBuilder, allowing them to easily manage new events, with automatic addition to the \"Past Events\" page after the event date. This was done originally using a custom CMS table and JavaScript to dynamically generate event cards, as the automatic past events feature was the most important feature to the client. This also saved the client from having to manually create a static page for each event, which was what they did in their previous site. After further discussion with the client, I transfered this functionallity to the built in Event system in Wix, which provides a more robust event management system.\n\nNext, I created a custom contact form that adds new submissions to a Wix database, allowing for easy management of inquiries and bulk emails. Custom logic was required to include each new menber's Neighborhood Council in the built in Contact database, allowing the client to filter contacts by Neighborhood Council when sending bulk emails.\n\nFinally, I migrated all existing static content from the old website to the new website, ensuring that all information was accurate and up-to-date. This involved manually copying text and importing images and pdfs to the new site. I also ensured that any links to other pages, events, or custom media were replaced with the new Wix links.\n\nOverall, the migration process was successful, and the new Wix website provided the LA NCSA with a more user-friendly and flexible platform to manage their online presence. I included documentation for the client to easily update and maintain the website in the future.",
+        "images": ["images/ncsaimage1.png", "images/ncsaimage3.png", "images/ncsaimage4.png", "images/ncsaimage5.png", "images/ncsaimage2.png"],
+        "subtitles": ["A screenshot of the LA NCSA homescreen, containing a carousel of images and useful pages.", "A past event page that dynamically adds events from a database once their date has passed.", "A calendar page with a Google Calendar embed, containing upcoming events and meetings.", "A donation page that allows users to pay using PayPal, Venmo, or card.", "A custom mailing list form that adds users to a database for easy management and bulk emails based on their Neighborhood Council."],
+        "tags": ["JavaScript", "Web Development", "CSV", "Wix"],
+        "date": "Sep 2025 - May 2026",
+        "links": {
+            "Website": "https://lisahart5.wixsite.com/lancsa"
+        },
+        "slug": "la-ncsa-website"
+    },
+    {
         "name": "Automated Music Transcription",
         "thumbnail": "images/AutomatedMusicTranscription.png",
         "description": "Research in transcribing existing scores to new sets of instruments.",
@@ -55,20 +69,6 @@
             "GitHub": "https://github.com/michael-bell-dev/music21_piano_validation"
         },
         "slug": "automated-music-transcription"
-    },
-    {
-        "name": "LA NCSA Website",
-        "thumbnail": "images/NCSA.png",
-        "description": "Migrating an existing website from NationBuilder to Wix.",
-        "text": "The Los Angeles Neighborhood Council Sustainability Alliance (LA NCSA) is a nonprofit organization focused on promoting sustainability initiatives within local communities. Their previous website was built on the NationBuilder platform, which presented several challenges to the team. As a volunteer web developer, I was tasked with migrating the website to Wix, a more user-friendly and flexible platform.\n\nThe migration process involved several key steps. First, I created an event system similar to the one they used on NationBuilder, allowing them to easily manage new events, with automatic addition to the \"Past Events\" page after the event date. This was done originally using a custom CMS table and JavaScript to dynamically generate event cards, as the automatic past events feature was the most important feature to the client. This also saved the client from having to manually create a static page for each event, which was what they did in their previous site. After further discussion with the client, I transfered this functionallity to the built in Event system in Wix, which provides a more robust event management system.\n\nNext, I created a custom contact form that adds new submissions to a Wix database, allowing for easy management of inquiries and bulk emails. Custom logic was required to include each new menber's Neighborhood Council in the built in Contact database, allowing the client to filter contacts by Neighborhood Council when sending bulk emails.\n\nFinally, I migrated all existing static content from the old website to the new website, ensuring that all information was accurate and up-to-date. This involved manually copying text and importing images and pdfs to the new site. I also ensured that any links to other pages, events, or custom media were replaced with the new Wix links.\n\nOverall, the migration process was successful, and the new Wix website provided the LA NCSA with a more user-friendly and flexible platform to manage their online presence. I included documentation for the client to easily update and maintain the website in the future.",
-        "images": ["images/ncsaimage1.png", "images/ncsaimage3.png", "images/ncsaimage4.png", "images/ncsaimage5.png", "images/ncsaimage2.png"],
-        "subtitles": ["A screenshot of the LA NCSA homescreen, containing a carousel of images and useful pages.", "A past event page that dynamically adds events from a database once their date has passed.", "A calendar page with a Google Calendar embed, containing upcoming events and meetings.", "A donation page that allows users to pay using PayPal, Venmo, or card.", "A custom mailing list form that adds users to a database for easy management and bulk emails based on their Neighborhood Council."],
-        "tags": ["JavaScript", "Web Development", "CSV", "Wix"],
-        "date": "Sep 2025 - Feb 2026",
-        "links": {
-            "Website": "https://lisahart5.wixsite.com/lancsa"
-        },
-        "slug": "la-ncsa-website"
     },
     {
         "name": "Deep Learning Neural Network",
