@@ -1,5 +1,19 @@
 [
     {
+        "name": "ChartEZ",
+        "thumbnail": "",
+        "description": "",
+        "text": "",
+        "images": [],
+        "subtitles": [],
+        "tags": ["AI", "Python", "API", "CI/CD", "Vapi", "CSV"],
+        "date": "May 2026 - Oct 2026",
+        "links": {
+            "GitHub": "https://chartez.ai"
+        },
+        "slug": "chartez"
+    },
+    {
         "name": "Vapi Eval Runner",
         "thumbnail": "images/vapi.avif",
         "description": "A Python script to automatically run Vapi evaluations in bulk.",
