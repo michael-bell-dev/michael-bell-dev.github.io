@@ -6,7 +6,7 @@
         "text": "",
         "images": ["images/chartez1.png", "images/chartez2.png", "images/chartez3.png", "images/chartez4.png", "images/chartez5.png", "images/chartez6.png"],
         "subtitles": [],
-        "tags": ["AI", "Python", "API", "CI/CD", "Vapi", "CSV"],
+        "tags": ["AI", "React", "TypeScript", "FastAPI", "Azure", "CosmosDB", "Entra ID", "Stripe", "Python", "API", "CI/CD", "SaaS", "Full Stack"],
         "date": "May 2026 - Oct 2026",
         "links": {
             "GitHub": "https://chartez.ai"
