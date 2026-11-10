@@ -97,7 +97,9 @@ a {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  margin: 20px;
+  width: min(800px, calc(100vw - 40px));
+  box-sizing: border-box;
+  margin: 20px auto;
   padding: 15px;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -106,6 +108,23 @@ a {
   transform: translateY(10px);
   transition: opacity 0.4s ease, transform 0.4s ease;
   transition: background 0.15s, transform 0.15s;
+}
+
+#projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.more-tags {
+  cursor: default;
 }
 
 .project.show {
@@ -307,6 +326,7 @@ a {
     align-items: flex-start;
     gap: 10px;
     padding: 10px;
+    width: calc(100vw - 24px);
   }
 
   .project img {

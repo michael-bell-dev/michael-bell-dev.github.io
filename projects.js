@@ -19,6 +19,11 @@ fetch('projects.json')
       const pageItems = filtered.slice(start, end);
 
       pageItems.forEach(p => {
+        const visibleTags = p.tags.slice(0, 5);
+        const tagsHTML = [
+          ...visibleTags.map(tag => `<span class="tag" data-tag="${tag}">${tag}</span>`),
+          ...(p.tags.length > 5 ? [`<span class="tag more-tags">${p.tags.length - 5} more...</span>`] : [])
+        ].join(' ');
         const div = document.createElement('a');
         div.classList.add('project');
         const currentSearch = encodeURIComponent(searchInput.value);
@@ -40,7 +45,7 @@ fetch('projects.json')
 
             <p>\n\n${p.description}</p>
 
-            <p>${p.tags.map(tag => `<span class="tag" data-tag="${tag}">${tag}</span>`).join(' ')}</p>
+            <p class="project-tags">${tagsHTML}</p>
           </div>
         `;
 
@@ -52,7 +57,7 @@ fetch('projects.json')
             div.classList.add('show');
           }
 
-          div.querySelectorAll('.tag').forEach(tagEl => {
+          div.querySelectorAll('.tag[data-tag]').forEach(tagEl => {
             tagEl.addEventListener('click', (e) => {
               e.preventDefault();
               e.stopPropagation();
