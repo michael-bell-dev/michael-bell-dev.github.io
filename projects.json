@@ -2,7 +2,7 @@
     {
         "name": "ChartEZ",
         "thumbnail": "images/chartezlogo.png",
-        "description": "",
+        "description": "Healthcare application with ambient listening and AI generated charting for doctors and scribes.",
         "text": "",
         "images": ["images/chartez1.png", "images/chartez2.png", "images/chartez3.png", "images/chartez4.png", "images/chartez5.png", "images/chartez6.png"],
         "subtitles": [],
