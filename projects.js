@@ -19,10 +19,11 @@ fetch('projects.json')
       const pageItems = filtered.slice(start, end);
 
       pageItems.forEach(p => {
-        const visibleTags = p.tags.slice(0, 5);
+        const visibleTagCount = p.tags.length === 6 ? 6 : 5;
+        const visibleTags = p.tags.slice(0, visibleTagCount);
         const tagsHTML = [
           ...visibleTags.map(tag => `<span class="tag" data-tag="${tag}">${tag}</span>`),
-          ...(p.tags.length > 5 ? [`<span class="tag more-tags">${p.tags.length - 5} more...</span>`] : [])
+          ...(p.tags.length > visibleTagCount ? [`<span class="tag more-tags">${p.tags.length - visibleTagCount} more...</span>`] : [])
         ].join(' ');
         const div = document.createElement('a');
         div.classList.add('project');

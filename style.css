@@ -97,7 +97,7 @@ a {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  width: min(800px, calc(100vw - 40px));
+  width: min(1000px, calc(100vw - 40px));
   box-sizing: border-box;
   margin: 20px auto;
   padding: 15px;
